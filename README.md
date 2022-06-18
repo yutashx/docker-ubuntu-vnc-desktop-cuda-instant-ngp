@@ -14,7 +14,7 @@ $ make run_image
 ローカルのブラウザーで`<サーバーのアドレス>:6080`を開き、ユーザーは$USER、パスワードは`password`でアクセスできる。
 ターミナルを開き、依存パッケージをインストールする。パスワードは`password`を入力する。
 ```
-$ cd /home/$USER/ubuntu-vnc-desktop-instant-ngp
+$ cd /home/$USER/workspace
 $ make install_deps
 ```
 
