@@ -1,18 +1,27 @@
-# Docker Ubuntu VNC Desktop
+# instant-ngp with Ubuntu VNC Desktop 
 ## What is this
-Dockerコンテナ上でUbuntu Desktopを作成し、VNCで接続できる。
-また、OpenGLが動き、Nvidia GPUも使用することができる。
+Dockerコンテナ上でUbuntu Desktopを作成し、VNCで接続し、instant-ngpを動かす。
 
 ## How to use
 サーバー上で以下のコマンドを実行
 ```
-$ git clone <this repository>
-$ cd <this repository>
-$ docker build -t ${USER}_ubuntu_desktop_vnc .
-$ docker run --rm --gpus all -p 6080:80 shm-size=512m -e HTTP_PASSWORD=password -e USER=ubuntu -e PASSWORD=password ${USER}_ubuntu_desktop_vnc:latest
+$ git clone --recursive https://adaptive.u-aizu.ac.jp/gitlab/yutashx/ubuntu-vnc-desktop-instant-ngp.git
+$ cd ubuntu-vnc-desktop-instant-ngp
+$ make build_image
+$ make run_image
 ```
 
-ローカルのブラウザーで`<サーバーのアドレス>:6080`を開き、ユーザーを`root`、パスワードを`password`にするこでアクセスできる。
+ローカルのブラウザーで`<サーバーのアドレス>:6080`を開き、ユーザーは$USER、パスワードは`password`でアクセスできる。
+ターミナルを開き、依存パッケージをインストールする。パスワードは`password`を入力する。
+```
+$ cd /home/$USER/ubuntu-vnc-desktop-instant-ngp
+$ make install_deps
+```
+
+instant-ngpのサンプルであるfoxを実行する。
+```
+$ make ngp_fox
+```
 
 ## Notes
 [fcwu/docker-ubuntu-vnc-desktop](https://github.com/fcwu/docker-ubuntu-vnc-desktop)で提供されているDockerfileを元に、base imageをubuntu:20.04からnvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04に変更することで作成している。
