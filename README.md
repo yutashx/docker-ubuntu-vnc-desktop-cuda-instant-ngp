@@ -18,7 +18,7 @@ $ cd /home/$USER/workspace
 $ make install_deps
 ```
 
-instant-ngpをインストールする
+instant-ngpをインストールする。
 ```
 $ make build_ngp
 ```
@@ -33,4 +33,4 @@ $ make ngp_fox
 他者が無断で使用できないようにHTTP Base Authenticationを設定しておくことをお勧めする。
 その他にSSLやScreen Resolutionも設定できる。
 
-現在の使用ではglxgearsやDonkey CarはGPUを利用できない。（誰かpull request出してくれると助かる）
+現在の使用ではglxgearsやDonkey CarはGPUを利用できない。
