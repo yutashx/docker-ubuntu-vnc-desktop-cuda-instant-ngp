@@ -1,6 +1,6 @@
-[submodule "docker-ubuntu-vnc-desktop"]
-	path = docker-ubuntu-vnc-desktop
-	url = https://adaptive.u-aizu.ac.jp/gitlab/yutashx/docker-ubuntu-vnc-desktop
 [submodule "instant-ngp"]
 	path = instant-ngp
 	url = https://github.com/NVlabs/instant-ngp.git
+[submodule "docker-ubuntu-vnc-desktop-cuda"]
+	path = docker-ubuntu-vnc-desktop-cuda
+	url = https://github.com/yutashx/docker-ubuntu-vnc-desktop-cuda.git

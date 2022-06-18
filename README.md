@@ -5,7 +5,7 @@ Dockerコンテナ上でUbuntu Desktopを作成し、VNCで接続し、instant-n
 ## How to use
 サーバー上で以下のコマンドを実行
 ```
-$ git clone --recursive https://adaptive.u-aizu.ac.jp/gitlab/yutashx/ubuntu-vnc-desktop-instant-ngp.git
+$ git clone --recursive https://github.com/yutashx/docker-ubuntu-vnc-desktop-cuda-instant-ngp.git
 $ cd ubuntu-vnc-desktop-instant-ngp
 $ make build_image
 $ make run_image
