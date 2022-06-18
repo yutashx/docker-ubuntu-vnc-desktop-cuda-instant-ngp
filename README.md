@@ -20,7 +20,7 @@ $ make install_deps
 
 instant-ngpをインストールする
 ```
-$ make biuld_ngp
+$ make build_ngp
 ```
 
 instant-ngpのサンプルのfoxを実行する。
