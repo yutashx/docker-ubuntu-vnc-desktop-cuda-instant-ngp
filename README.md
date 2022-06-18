@@ -18,7 +18,12 @@ $ cd /home/$USER/workspace
 $ make install_deps
 ```
 
-instant-ngpのサンプルであるfoxを実行する。
+instant-ngpをインストールする
+```
+$ make biuld_ngp
+```
+
+instant-ngpのサンプルのfoxを実行する。
 ```
 $ make ngp_fox
 ```
